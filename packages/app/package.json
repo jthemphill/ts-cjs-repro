@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "description": "A CJS package that imports a dual CJS/MJS package. This represents a consumer attempting to use YJS: https://github.com/yjs/yjs",
+  "dependencies": {
+    "lib": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "5.7.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "cfg": "tsc --showConfig",
+    "trace": "tsc --traceResolution"
+  }
+}

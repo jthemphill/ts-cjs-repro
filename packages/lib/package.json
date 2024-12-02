@@ -1,0 +1,26 @@
+{
+  "name": "lib",
+  "description": "This package exports its index as both a CJS and an MJS file. It's a basic model of the popular project YJS: https://github.com/yjs/yjs",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "clean": "rm -rf dist",
+    "prebuild": "pnpm run clean",
+    "build": "rollup -c && tsc",
+    "preinstall": "pnpm run build"
+  },
+  "types": "./dist/src/index.d.ts",
+  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "devDependencies": {
+    "rollup": "4.28.0",
+    "typescript": "5.7.2"
+  }
+}
