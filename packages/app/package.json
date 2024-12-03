@@ -2,7 +2,8 @@
   "name": "app",
   "description": "A CJS package that imports a dual CJS/MJS package. This represents a consumer attempting to use YJS: https://github.com/yjs/yjs",
   "dependencies": {
-    "lib": "workspace:*"
+    "lib": "workspace:*",
+    "yjs": "13.6.20"
   },
   "devDependencies": {
     "typescript": "5.7.2"
