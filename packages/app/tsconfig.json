@@ -3,6 +3,7 @@
     "module": "NodeNext",
     "target": "ESNext",
     "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
     "strict": true,
     "composite": true,
     "outDir": "dist"
